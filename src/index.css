@@ -25,3 +25,20 @@
     @apply h-auto border-4 border-cyan-300 bg-fuchsia-950 rounded-xl duration-300 cursor-pointer hover:rotate-x-20 active:rotate-x-20 shadow-lg/30 shadow-pink-600;
   }
 }
+
+.view {
+  animation: scroll linear;
+  animation-timeline: view();
+  animation-range: entry 0% 30%;
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 0.5;
+    scale: 0.5;
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
+  }
+}

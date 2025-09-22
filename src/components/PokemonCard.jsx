@@ -2,7 +2,7 @@ export const PokemonCard = ({ pokemonData }) => {
   return (
     <>
       {/* Root conatiner,baad mein iski hieght ko auto par set kar dunga */}
-      <div className="card">
+      <div className="card view">
         {/* Image */}
         <figure className="flex items-center flex-col space-y-3">
           <img
