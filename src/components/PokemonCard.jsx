@@ -8,7 +8,7 @@ export const PokemonCard = ({ pokemonData }) => {
           <img
             src={pokemonData.sprites.other.dream_world.front_default}
             alt={pokemonData.name}
-            className="w-30 h-30 my-2"
+            className="p-2 w-30 h-30 my-2 bg-red-200 rounded-xl shadow-lg/90 shadow-red-400"
           />
           <h1 className="font-semibold text-xl capitalize text-pink-400">
             {pokemonData.name}

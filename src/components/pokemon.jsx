@@ -7,7 +7,7 @@ export const Pokemon = () => {
   const [error, setError] = useState(null);
   const [search, setSearch] = useState("");
 
-  const API = "https://pokeapi.co/api/v2/pokemon?limit=500";
+  const API = "https://pokeapi.co/api/v2/pokemon?limit=200";
 
   const fetchPokemon = async () => {
     try {
@@ -65,7 +65,10 @@ export const Pokemon = () => {
       <div className="rootContainer">
         <center className="pokemonProject">Pokemon Project</center>
         {/* Input Field */}
-        <div className="flex justify-center my-3">
+        <div className="searchContainer">
+          <p className="text-lg font-semibold text-pink-700">
+            Search Pokemon card
+          </p>
           <input
             type="search"
             value={search}
