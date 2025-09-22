@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@layer components {
+  .rootContainer {
+    @apply max-w-screen container mx-auto px-4 md:px-20 ;
+  }
+  .pokemonProject {
+    @apply text-4xl font-black bg-linear-to-r from-emerald-500 via-rose-400 to-purple-500 bg-clip-text text-transparent;
+  }
+
+  .input-control {
+    @apply w-70 font-semibold text-green-500 bg-white px-2 py-1 border-b-2 border-b-purple-500 outline-none focus:scale-x-103 duration-300;
+  }
+
+  .grid-container {
+    @apply grid grid-cols-1 md:grid-cols-4 gap-x-2 gap-y-3;
+  }
+
+  /* PokemonCard Stylesheet */
+  .card {
+    @apply h-auto border-4 border-cyan-300 bg-fuchsia-950 rounded-xl duration-300 cursor-pointer hover:rotate-x-20 active:rotate-x-20 shadow-lg/30 shadow-pink-600;
+  }
+}
