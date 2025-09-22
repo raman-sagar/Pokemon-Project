@@ -25,7 +25,7 @@ export const Pokemon = () => {
       }); //map method end
 
       const detailedResponse = await Promise.all(detailedPokemonData);
-      console.log("Array of objects ", detailedResponse);
+      // console.log("Array of objects ", detailedResponse);
       setPokemon(detailedResponse);
       setLoading(false);
     } catch (error) {
